@@ -1,0 +1,140 @@
+html, body {
+    height: 100%;
+}
+
+a {
+    font-size: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    width: 375px;
+    height: 812px;
+    box-sizing: border-box;
+    padding: 40px 20px 30px;
+    border: 5px solid turquoise;
+    position: relative;
+}
+.close-icon {
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 40px;
+    left: 22px;
+}
+.content-title {
+    font-size: 27px;
+    line-height: 27px;
+    text-align: center;
+    padding-left: 130px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.play-detail {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.play-title {
+    font-size: 42px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.play-artist {
+    font-size: 18px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.play-img {
+    width: 140px;
+    height: 110px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fecd1a;
+    box-sizing: border-box;
+}
+.play-img i {
+    font-size: 32px;
+    
+    color: #fff;
+}
+
+.play-icons {
+    padding-top: 40px;
+}
+.play-icons button {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border:  2px solid #333;
+    font-size: 24px;
+    border-radius: 100%;
+    border-bottom: 5px solid #333;
+    cursor: pointer;
+}
+.play-icons .play-button {
+    border-radius: 15px;
+    width: 150px;
+    
+}
+.playlist-item:first-child {
+    padding-top: 40px;
+}
+
+.playlist-item:first-child .playlist-item-img {
+    background-color: #f8efd4;
+}
+
+.playlist-item:nth-child(2) .playlist-item-img {
+    background-color: #f56a79;
+}
+
+.playlist-item:nth-child(3) .playlist-item-img {
+    background-color: #335d2d;
+}
+
+.playlist-item:nth-child(4) .playlist-item-img {
+    background-color: #b8de6f;
+}
+
+.playlist-item {
+    display: flex;
+    flex-direction: row;
+    padding: 27px 0;
+}
+
+.playlist-item-img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.playlist-item-txt {
+    font-size: 16px; font-weight: 600;
+    padding-left: 10px;
+}
+
+.music-title {
+    font-size: 24px;
+}
+
+.music-artist {
+    padding-top: 10px;
+}
