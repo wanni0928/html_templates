@@ -1,0 +1,54 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+html{ 
+    height: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #f6f5f1;
+}
+.card-container {
+    position: absolute;
+    left: 0; right: 0;
+    margin: 0 auto;
+    width: 40%; 
+}
+.card-container h1 {text-align: center; padding: 20px 0 80px; font-size: 36px;}
+.card-container ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    list-style: none;
+    width: 49%;
+    padding: 6px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.card h2::after {font-size: 16px; padding: 20px 0; display: block;}
+
+.card:first-child h2::after {content: "#FF6347";}
+.card:nth-child(2) h2::after {content: "#008080";}
+.card:nth-child(3) h2::after {content: "#DEB887";}
+.card:nth-child(4) h2::after {content: "#D7BFD7";}
+
+.card h2::before {margin-bottom: 20px;  display: block; width: 100%; height: 30px;}
+
+.card:first-child h2::before {content: ""; background-color: #FF6347;}
+.card:nth-child(2) h2::before {content: ""; background-color: #008080;}
+.card:nth-child(3) h2::before {content: ""; background-color: #DEB887;}
+.card:nth-child(4) h2::before {content: ""; display: block; background-color: #D7BFD7;}
+
+.card-color-block{height: 160px;}
+.card:first-child .card-color-block {background-color:  #FF6347;}
+.card:nth-child(2) .card-color-block {background-color: #008080;}
+.card:nth-child(3) .card-color-block {background-color: #DEB887;}
+.card:nth-child(4) .card-color-block {background-color: #D7BFD7;}
